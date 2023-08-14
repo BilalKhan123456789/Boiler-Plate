@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Navbar from './compomemts/Navbar'
+import HeraSec from './compomemts/HeraSec'
+import Category from './compomemts/Category'
+import About from './compomemts/About'
+// import New from './compomemts/New'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+     <Navbar/>
+      <HeraSec/> 
+<Category/>
+<About/>
+
+      {/* <New/> */}
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
